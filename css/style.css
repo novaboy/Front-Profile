@@ -1,0 +1,56 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1rem; /* Default font size is 16px */
+    /* --mono: "Courier New", Courier, monospace;
+    --sans: "Courier New", Courier, monospace; */
+    --mono: 'Roboto Mono', monospace;
+    --sans: 'Roboto', sans-serif;
+    --highlight-color: #731da1; /* Highlight color for keywords */
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: var(--font-size);
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--sans);
+}
+
+#intro .name {
+    font-family: var(--sans);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+#intro p {
+    font-size: 1.25rem;
+    margin: .5rem;
+}
+
+#intro .highlight {
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+
+#intro .small-text {
+    font-size: 0.75rem; /* 0.75rem = 12px */
+}
