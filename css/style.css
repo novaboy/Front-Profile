@@ -11,12 +11,12 @@
     --sans: "Courier New", Courier, monospace; */
     --mono: 'Roboto Mono', monospace;
     --sans: 'Roboto', sans-serif;
-    --highlight-color: #731da1; /* Highlight color for keywords */
+    --highlight-color: #9FE2BF; /* Highlight color for keywords */
 }
 
 html {
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 16px;;
 }
 
 *,
@@ -31,12 +31,20 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-family: var(--sans);
+    background-color: #212F3C;
+    color: white;
 }
 
 #intro .name {
+    font-size: 0.75rem; /* 0.75rem = 12px */
+}
+
+#intro .name span {
     font-family: var(--sans);
     font-size: 2rem;
     font-weight: bold;
+    display: block;
+    color: #40E0D0;
 }
 
 
@@ -51,6 +59,3 @@ body {
 }
 
 
-#intro .small-text {
-    font-size: 0.75rem; /* 0.75rem = 12px */
-}
