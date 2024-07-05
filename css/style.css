@@ -9,8 +9,11 @@
     --font-size: 1rem; /* Default font size is 16px */
     /* --mono: "Courier New", Courier, monospace;
     --sans: "Courier New", Courier, monospace; */
-    --mono: 'Roboto Mono', monospace;
-    --sans: 'Roboto', sans-serif;
+    /* --mono: 'Roboto Mono', monospace;
+    --sans: 'Roboto', sans-serif; */
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
     --highlight-color: #9FE2BF; /* Highlight color for keywords */
 }
 
@@ -32,7 +35,7 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-family: var(--sans);
-    background-color: #212F3C;
+    background-color: var(--black);
     color: white;
 }
 
@@ -129,3 +132,45 @@ a:hover {
     background-color: var(--plum);
 }
 
+
+
+
+
+
+
+/* navigation */
+nav {
+    font-size: 80%;
+}
+
+nav ul  {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+nav ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+nav h1 [class*=fa-] {
+    font-size: 100%;
+}
+
+nav [class*=fa-]:hover,
+nav a {
+    color: var(--magenta);
+}
